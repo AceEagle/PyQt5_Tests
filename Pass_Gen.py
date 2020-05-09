@@ -22,3 +22,5 @@ def PassGen(qte, symbs):
 print(PassGen(6, 1))
 
 app = QApplication([])
+
+#yotoutlemonde
