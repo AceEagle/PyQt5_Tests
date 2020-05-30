@@ -1,4 +1,6 @@
 import random
+import sys
+from PyQt5 import QtCore, QtWidgets, QtGui
 from PyQt5.QtWidgets import *
 
 def PassGen(qte, symbs):
@@ -21,6 +23,27 @@ def PassGen(qte, symbs):
 
 print(PassGen(6, 1))
 
-app = QApplication([])
+class Pass_Gen(QtWidgets.QWidget):
+    def __init__(self):
+        super().__init__()
 
-#yotoutlemonde
+        self.numbs = QtWidgets.QSpinBox()
+
+    if __name__ == "__main__":
+        app = QtWidgets.QApplication([])
+
+        widget = Pass_Gen()
+        widget.resize(800, 600)
+        widget.show()
+
+        sys.exit(app.exec_())
+
+if __name__ == "__main__":
+    app = QtWidgets.QApplication([])
+
+    widget = Pass_Gen()
+    widget.resize(800, 600)
+    widget.show()
+
+    sys.exit(app.exec_())
+
