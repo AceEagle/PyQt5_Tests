@@ -29,13 +29,13 @@ class Pass_Gen(QtWidgets.QWidget):
 
         self.numbs = QtWidgets.QSpinBox()
 
-    if __name__ == "__main__":
-        app = QtWidgets.QApplication([])
+if __name__ == "__main__":
+    app = QtWidgets.QApplication([])
 
-        widget = Pass_Gen()
-        widget.resize(800, 600)
-        widget.show()
+    widget = Pass_Gen()
+    widget.resize(800, 600)
+    widget.show()
 
-        sys.exit(app.exec_())
+    sys.exit(app.exec_())
 
 
